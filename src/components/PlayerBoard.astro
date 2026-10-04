@@ -1,0 +1,47 @@
+---
+
+---
+
+<section id="player-board" class="panel">
+  <div class="panel__head">
+    <h2>El flock</h2>
+    <p>
+      <span data-count>0</span> miembros. Lo esencial es el nombre y el ratio; abre
+      “Ver más” para detalles.
+    </p>
+  </div>
+
+  <div class="flock-search-wrapper flex items-center gap-3" data-search-wrapper>
+    <div class="flock-search">
+      <span class="flock-search__icon" aria-hidden="true">🔍</span>
+      <input
+        type="search"
+        class="flock-search__input"
+        placeholder="Buscar jugador por nombre…"
+        aria-label="Buscar jugador por nombre"
+        data-flock-search
+      />
+    </div>
+    <div>
+      <button
+        class="btn btn--danger btn--sm text-nowrap"
+        data-open-clear
+        title="Vaciar todo el flock"
+        >🗑️ <span class="hidden md:inline">Vaciar flock</span></button
+      >
+    </div>
+  </div>
+
+  <p class="empty" data-empty>
+    Todavía no hay pájaros en el nido. Agrega el primero arriba.
+  </p>
+  <p class="empty is-hidden-tab" data-search-empty>
+    No se encontraron jugadores con ese nombre.
+  </p>
+
+  <div class="podium" data-podium></div>
+
+  <div class="flock-container" data-flock-container>
+    <div class="flock" data-flock></div>
+  </div>
+</section>

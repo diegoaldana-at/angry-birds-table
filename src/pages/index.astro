@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeroBanner from "../components/HeroBanner.astro";
+import ScoreForm from "../components/ScoreForm.astro";
+import ViewTabs from "../components/ViewTabs.astro";
+import PlayerBoard from "../components/PlayerBoard.astro";
+import TableExport from "../components/TableExport.astro";
+import PlayerDialogs from "../components/PlayerDialogs.astro";
+---
+
+<BaseLayout title="Flock Supremo · Tabla de ratios">
+  <main class="stage">
+    <HeroBanner />
+    <ScoreForm />
+    <ViewTabs />
+    <div class="views-wrapper">
+      <PlayerBoard />
+      <TableExport />
+    </div>
+  </main>
+  <PlayerDialogs />
+</BaseLayout>
+
+<script>
+  import { bootstrap } from "../client/bootstrap";
+  bootstrap();
+</script>

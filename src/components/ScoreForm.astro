@@ -1,0 +1,57 @@
+---
+
+---
+
+<section id="score-form" class="panel">
+  <div class="panel__head">
+    <h2>Nuevo disparo</h2>
+    <p>
+      Guarda y sigue. El ratio se calcula al vuelo: (puntuación / poder) × 1000.
+    </p>
+  </div>
+
+  <form class="score-form">
+    <label>
+      Nombre jugador
+      <input
+        name="name"
+        type="text"
+        maxlength="24"
+        autocomplete="nickname"
+        required
+        placeholder="Metzli"
+      />
+    </label>
+    <label>
+      Puntuación
+      <input
+        name="score"
+        type="number"
+        min="0"
+        step="1"
+        required
+        placeholder="40"
+      />
+    </label>
+    <label>
+      Poder
+      <input
+        name="power"
+        type="number"
+        min="1"
+        step="1"
+        required
+        placeholder="2000"
+      />
+    </label>
+
+    <div class="score-form__ratio">
+      <span>Ratio estimado</span>
+      <strong data-ratio-preview>—</strong>
+    </div>
+
+    <button type="submit" class="btn btn--primary">Guardar y seguir</button>
+  </form>
+
+  <p class="status" data-form-status></p>
+</section>
