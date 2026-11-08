@@ -41,13 +41,13 @@ function drawHeaders(ctx: CanvasRenderingContext2D) {
   ctx.font = FONTS.header;
   ctx.textBaseline = "middle";
 
-  ctx.fillText("RANGO", left.x, BOARD.headerY);
+  ctx.fillText("RANK", left.x, BOARD.headerY);
   ctx.fillText("JUGADOR", left.x + 52, BOARD.headerY);
   ctx.textAlign = "right";
   ctx.fillText("RATIO", left.x + left.width - 4, BOARD.headerY);
 
   ctx.textAlign = "left";
-  ctx.fillText("RANGO", right.x, BOARD.headerY);
+  ctx.fillText("RANK", right.x, BOARD.headerY);
   ctx.fillText("JUGADOR", right.x + 52, BOARD.headerY);
   ctx.textAlign = "right";
   ctx.fillText("RATIO", right.x + right.width - 4, BOARD.headerY);
